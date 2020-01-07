@@ -1,0 +1,6 @@
+<h2 *ngIf="isVisible" ngClass="red">{{title}}</h2>
+<ul>
+  <li *ngFor="let item of list" [ngStyle]="style">
+    {{item.title}}
+  </li>
+</ul>
