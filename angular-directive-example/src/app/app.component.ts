@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-directive-example';
-  isVisible = true;
+  isVisible = false;
   list: { title: string }[] = [
     { title: 'Tour of Heroes' },
     { title: 'CLI Documentation' },

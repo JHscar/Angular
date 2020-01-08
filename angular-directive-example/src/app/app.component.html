@@ -1,4 +1,5 @@
-<h2 *ngIf="isVisible" ngClass="red">{{title}}</h2>
+<h2 *ngIf="isVisible" ngClass="red" appHighlight='aqua'>{{title}}</h2>
+<p *appUnless="isVisible">여기는 *ngIf와 반대로 동작합니다</p>
 <ul>
   <li *ngFor="let item of list" [ngStyle]="style">
     {{item.title}}
