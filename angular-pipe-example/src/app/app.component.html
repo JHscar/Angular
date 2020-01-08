@@ -1,0 +1,10 @@
+<p>{{ {name:"mark"} | json }}</p>
+<p>{{ 'markzzang' | slice: 0:4 }}</p>
+<p>{{ ["mark", "anna"] | slice: 0:1 }}</p>
+<p>{{ 'mark' | uppercase }}</p>
+<p>{{ 'MARK' | lowercase }}</p>
+<p>{{ 'mark' | uppercase | lowercase }}</p>
+<p>{{ 1234566789012 | date: "yyyy-MM-dd" }}</p>
+<p>{{ data | async }}</p>
+<p>{{ 'mark' | myPipe }}</p>
+<p>{{ 'mark' | myPipe:'anna':'happy' }}</p>
