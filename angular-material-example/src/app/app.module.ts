@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatButtonModule, MatInputModule, MatToolbarModule, MatIconModule, MatGridListModule, MatDialogModule } from '@angular/material';
+import { MatButtonModule, MatInputModule, MatToolbarModule, MatIconModule, MatGridListModule, MatDialogModule, MatTableModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DialogComponent } from './dialog/dialog.component';
 
@@ -24,6 +24,7 @@ import { DialogComponent } from './dialog/dialog.component';
     MatIconModule,
     MatGridListModule,
     MatDialogModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent],
