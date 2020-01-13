@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { MatDialog } from '@angular/material';
+import { DialogComponent } from './dialog/dialog.component';
 
 class MyErrorStateMatcher implements ErrorStateMatcher {
 
@@ -25,5 +27,14 @@ export class AppComponent {
   ]);
 
   matcher = new MyErrorStateMatcher();
+
+  constructor(public dialog: MatDialog) { }
+
+  openDialog() {
+    this.dialog.open(DialogComponent, {
+      width: '250px',
+      
+    });
+  }
 
 }
